@@ -14,25 +14,23 @@ body {
 /* Home Page Styles */
 .home-page {
     background-color: #f9f7f4; /* Light background color */
-    background-image: url('transparent-fruits.png'); /* Background image with transparent fruit-like elements */
-    background-size: cover;
     background-position: center;
     padding: 50px 0;
     display: flex;
-    justify-content: space-around; /* Center columns horizontally */
+    justify-content: center; /* Center columns horizontally */
     align-items: center; /* Center columns vertically */
     text-align: center;
 }
 
 .image-column {
     flex: 1;
-    padding: 0 20px; /* Add padding for spacing */
 }
 
 .image-column img {
     border-radius: 50%; /* Circular frame for the image */
     width: 200px;
     height: 200px;
+    margin-bottom: 20px;
 }
 
 .text-column {
