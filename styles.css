@@ -1,4 +1,4 @@
-/* styles.css */
+/* Reset default margin and padding */
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@ body, h1, h2, p, ul, li {
 /* Global styles */
 body {
     font-family: Arial, sans-serif; /* Recommended font */
-    background-color: peachpuff; /* Set background color to peach */
+    background-color: #f5f5f5; /* Soft, inviting background color */
     color: black; /* Set text color to black */
 }
 
@@ -15,111 +15,39 @@ body {
 header {
     background-color: lightcoral; /* Set header background color */
     padding: 20px 0; /* Add padding to top and bottom */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center align items vertically */
 }
 
 /* Navigation styles */
 nav ul {
     list-style-type: none; /* Remove list bullet points */
-    text-align: center; /* Center align navigation links */
+    display: flex; /* Use flexbox for layout */
 }
 
 nav ul li {
-    display: inline; /* Display navigation links inline */
     margin-right: 20px; /* Add space between navigation links */
+}
+
+nav ul li:first-child {
+    margin-right: auto; /* Push the first navigation link to the far left */
 }
 
 nav ul li a {
     text-decoration: none; /* Remove underline from links */
     color: white; /* Set link color to white */
-    font-size: 18px; /* Set font size */
-}
-
-/* Home section styles */
-#home {
-    text-align: center; /* Center align content */
-    padding: 50px 0; /* Add padding to top and bottom */
-}
-
-#home h2 {
-    font-size: 36px; /* Set heading font size */
-    margin-bottom: 20px; /* Add space below heading */
-}
-
-#home p {
-    font-size: 18px; /* Set paragraph font size */
-}
-/* Body styles */
-body {
-    font-family: Arial, sans-serif; /* Recommended font */
-    color: black; /* Set text color to black */
-    background-color: peachpuff; /* Set background color to peach */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-}
-
-/* Container styles */
-.container {
-    width: 90%; /* Set width to 90% of the viewport */
-    max-width: 1200px; /* Set maximum width to 1200px */
-    margin: 50px auto; /* Center the container horizontally */
-}
-
-/* Heading styles */
-.heading {
-    font-family: "Arial Black", sans-serif; /* Recommended heading font */
-    font-size: 36px; /* Set font size to 36px */
-    text-align: center; /* Center align the heading */
+    font-size: 24px; /* Set larger font size */
 }
 
 /* Section styles */
 .section {
-    margin-bottom: 50px; /* Add space between sections */
+    padding: 40px 20px; /* Add padding to sections */
+    text-align: center; /* Center align section content */
 }
 
-/* Large size font for containers */
-.container h2 {
-    font-size: 24px; /* Set font size to 24px */
+/* Heading styles */
+h2 {
+    font-size: 36px; /* Set larger heading font size */
+    margin-bottom: 20px; /* Add space below headings */
 }
 
-/* About container styles */
-.about-container {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space items evenly */
-    align-items: center; /* Center items vertically */
-}
-
-/* Recipe container styles */
-.recipe-container {
-    display: grid; /* Use grid for layout */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
-    gap: 20px; /* Add gap between recipe items */
-}
-
-/* Recipe item styles */
-.recipe-item {
-    position: relative; /* Position relative for hover effect */
-}
-
-/* Recipe image styles */
-.recipe-image {
-    width: 100%; /* Set image width to 100% of container */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Recipe name styles */
-.recipe-name {
-    position: absolute; /* Position absolute for hover effect */
-    top: 50%; /* Align at the center vertically */
-    left: 50%; /* Align at the center horizontally */
-    transform: translate(-50%, -50%); /* Center the text */
-    background-color: rgba(255, 255, 255, 0.8); /* Add background color with transparency */
-    padding: 10px; /* Add padding */
-    font-size: 18px; /* Set font size */
-    text-align: center; /* Center align text */
-    visibility: hidden; /* Hide by default */
-}
-
-/* Recipe item hover effect */
-.recipe-item:hover .recipe-name {
-    visibility: visible; /* Show on hover */
-}
