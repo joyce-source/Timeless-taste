@@ -1,139 +1,125 @@
-/* Reset styles */
-* {
+/* styles.css */
+body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    font-family: Arial, sans-serif; /* Recommended font */
+    background-color: peachpuff; /* Set background color to peach */
+    color: black; /* Set text color to black */
 }
 
 /* Header styles */
 header {
-    background-color: #f8f9fa;
-    padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: lightcoral; /* Set header background color */
+    padding: 20px 0; /* Add padding to top and bottom */
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Navigation styles */
+nav ul {
+    list-style-type: none; /* Remove list bullet points */
+    text-align: center; /* Center align navigation links */
 }
 
-.nav-links {
-    list-style: none;
+nav ul li {
+    display: inline; /* Display navigation links inline */
+    margin-right: 20px; /* Add space between navigation links */
 }
 
-.nav-links li {
-    display: inline;
-    margin-left: 20px;
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set link color to white */
+    font-size: 18px; /* Set font size */
 }
 
-.nav-links li a {
-    text-decoration: none;
-    color: #333;
+/* Home section styles */
+#home {
+    text-align: center; /* Center align content */
+    padding: 50px 0; /* Add padding to top and bottom */
 }
 
-.logo {
-    font-size: 24px;
-    color: #333;
+#home h2 {
+    font-size: 36px; /* Set heading font size */
+    margin-bottom: 20px; /* Add space below heading */
 }
 
-/* Hero section styles */
-.hero {
-    background-image: url('hero-bg.jpg');
-    background-size: cover;
-    color: #fff;
-    padding: 100px 0;
-    text-align: center;
+#home p {
+    font-size: 18px; /* Set paragraph font size */
+}
+/* Body styles */
+body {
+    font-family: Arial, sans-serif; /* Recommended font */
+    color: black; /* Set text color to black */
+    background-color: peachpuff; /* Set background color to peach */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+/* Container styles */
+.container {
+    width: 90%; /* Set width to 90% of the viewport */
+    max-width: 1200px; /* Set maximum width to 1200px */
+    margin: 50px auto; /* Center the container horizontally */
 }
 
-.hero p {
-    font-size: 20px;
-    margin-bottom: 40px;
+/* Heading styles */
+.heading {
+    font-family: "Arial Black", sans-serif; /* Recommended heading font */
+    font-size: 36px; /* Set font size to 36px */
+    text-align: center; /* Center align the heading */
 }
 
-/* Features section styles */
-.features {
-    padding: 100px 0;
+/* Section styles */
+.section {
+    margin-bottom: 50px; /* Add space between sections */
 }
 
-.features h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
+/* Large size font for containers */
+.container h2 {
+    font-size: 24px; /* Set font size to 24px */
 }
 
-.feature {
-    margin-bottom: 40px;
+/* About container styles */
+.about-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
 }
 
-.feature h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+/* Recipe container styles */
+.recipe-container {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Add gap between recipe items */
 }
 
-.feature p {
-    font-size: 18px;
+/* Recipe item styles */
+.recipe-item {
+    position: relative; /* Position relative for hover effect */
 }
 
-/* Sign up section styles */
-.signup {
-    background-color: #f8f9fa;
-    padding: 100px 0;
+/* Recipe image styles */
+.recipe-image {
+    width: 100%; /* Set image width to 100% of container */
+    height: auto; /* Maintain aspect ratio */
 }
 
-.signup h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+/* Recipe name styles */
+.recipe-name {
+    position: absolute; /* Position absolute for hover effect */
+    top: 50%; /* Align at the center vertically */
+    left: 50%; /* Align at the center horizontally */
+    transform: translate(-50%, -50%); /* Center the text */
+    background-color: rgba(255, 255, 255, 0.8); /* Add background color with transparency */
+    padding: 10px; /* Add padding */
+    font-size: 18px; /* Set font size */
+    text-align: center; /* Center align text */
+    visibility: hidden; /* Hide by default */
 }
 
-.signup p {
-    font-size: 20px;
-    margin-bottom: 40px;
+/* Recipe item hover effect */
+.recipe-item:hover .recipe-name {
+    visibility: visible; /* Show on hover */
 }
-
-.signup form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.signup input[type="email"] {
-    padding: 10px;
-    width: 300px;
-    border: 2px solid #333;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-
-.signup button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Footer styles */
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-
