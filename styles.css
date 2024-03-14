@@ -5,6 +5,15 @@ body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
+section {
+	width: 80px;
+	height: 80px;
+	background: #8e44ad;
+	background-size: 40px;
+	background-repeat: no-repeat;
+	background-position: 0px -10px
+}
+
 
 /* Global styles */
 body {
