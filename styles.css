@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
 }
 
 .container {
@@ -205,4 +206,12 @@ body {
 .community-register-link p a:hover {
   text-decoration: underline;
 }
-
+.community-body{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(https://images.unsplash.com/photo-1541780234649-a3d8c21e2d8b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
