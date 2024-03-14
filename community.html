@@ -20,13 +20,12 @@
 
     <section class="community-page">
         <h2>Community</h2>
-        <p>Welcome to our community! Connect with other food enthusiasts, share your favorite recipes, and learn from each other.</p>
-	<!-- Button to open the modal -->
-<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
-
+	<p>Welcome to our community!</p>
+	<p>Connect with other food enthusiasts, share your favorite recipes, and learn from each other.</p>
+	
 <!-- The Modal (contains the Sign Up form) -->
 <div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">times;</span>
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"></span>
   <form class="modal-content" action="/action_page.php">
     <div class="container">
       <h1>Sign Up</h1>
@@ -54,52 +53,6 @@
     </div>
   </form>
 </div>
-
-        <!-- Display community members -->
-        <div class="community-members">
-            <h3>Community Members</h3>
-            <!-- If user is signed in, display community members -->
-            <!-- Replace the placeholders with actual user avatars and usernames -->
-            <div class="member">
-                <img src="avatar1.jpg" alt="Avatar">
-                <p>Username1</p>
-            </div>
-            <div class="member">
-                <img src="avatar2.jpg" alt="Avatar">
-                <p>Username2</p>
-            </div>
-            <!-- Add more members as needed -->
-        </div>
-    </section>
-
-    <!-- Additional content for the community page -->
-
-    <!-- JavaScript to handle sign-in pop-up -->
-    <script>
-        // Get the sign-in modal
-        var modal = document.getElementById("signin-modal");
-
-        // Get the <span> element that closes the modal
-        var closeBtn = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on the button, open the modal
-        function openModal() {
-            modal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        closeBtn.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
-
 </body>
 </html>
 
