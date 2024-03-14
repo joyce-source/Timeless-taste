@@ -1,217 +1,53 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
+/* styles.css */
+
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Home Page Styles */
-.home-page {
-    background-color: #f9f7f4; /* Light background color */
-    background-position: center;
-    padding: 50px 0;
-    display: flex;
-    justify-content: center; /* Center columns horizontally */
-    align-items: center; /* Center columns vertically */
-    text-align: center;
-}
-
-.image-column {
-    flex: 1;
-}
-
-.image-column img {
-    border-radius: 50%; /* Circular frame for the image */
-    width: 200px;
-    height: 200px;
-    margin-bottom: 20px;
-}
-
-.text-column {
-    flex: 1;
-    padding: 0 20px; /* Add padding for spacing */
-}
-
-.text-column h2 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.text-column p {
-    font-size: 18px;
-    color: #666;
-}
-/* Existing CSS styles */
-
+/* Global styles */
 body {
-  margin: 30px;
-  font-family: "Poppins", sans-serif;
+    font-family: Arial, sans-serif; /* Recommended font */
+    background-color: peachpuff; /* Set background color to peach */
+    color: black; /* Set text color to black */
 }
 
-/* Add the new CSS for recipe page */
-
-.recipe-grid {
-  max-width: 900px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
+/* Header styles */
+header {
+    background-color: lightcoral; /* Set header background color */
+    padding: 20px 0; /* Add padding to top and bottom */
 }
 
-.recipe-card {
-  background: #fff;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
+/* Navigation styles */
+nav ul {
+    list-style-type: none; /* Remove list bullet points */
+    text-align: center; /* Center align navigation links */
 }
 
-.recipe-card img {
-  max-width: 100%;
-  border-radius: 50%;
+nav ul li {
+    display: inline; /* Display navigation links inline */
+    margin-right: 20px; /* Add space between navigation links */
 }
 
-.recipe-title {
-  font-size: 18px;
-  margin-top: 10px;
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set link color to white */
+    font-size: 18px; /* Set font size */
 }
 
-.recipe-description {
-  font-size: 14px;
-  color: #666;
-  margin-top: 5px;
-}
-/* Reset styles */
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+/* Home section styles */
+#home {
+    text-align: center; /* Center align content */
+    padding: 50px 0; /* Add padding to top and bottom */
 }
 
-/* Community page styles */
-.community-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: url(bg.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
+#home h2 {
+    font-size: 36px; /* Set heading font size */
+    margin-bottom: 20px; /* Add space below heading */
 }
 
-.community-wrapper {
-  width: 420px;
-  background: rgba(255, 255, 255, 0.2); /* Transparent background with slight opacity */
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(9px);
-  color: #fff;
-  border-radius: 12px;
-  padding: 30px 40px;
+#home p {
+    font-size: 18px; /* Set paragraph font size */
 }
 
-.community-wrapper h1 {
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 20px; /* Add margin bottom for spacing */
-}
-
-.community-input-box {
-  position: relative;
-  margin-bottom: 30px; /* Add margin bottom for spacing */
-}
-
-.community-input-box input {
-  width: 100%;
-  height: 50px;
-  background: transparent;
-  border: none;
-  outline: none;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 40px;
-  font-size: 16px;
-  color: #fff;
-  padding: 20px 45px 20px 20px;
-}
-
-.community-input-box input::placeholder {
-  color: #fff;
-}
-
-.community-input-box i {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 20px;
-  color: #fff; /* Change icon color to white */
-}
-
-.community-remember-forgot {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14.5px;
-  margin-bottom: 15px; /* Add margin bottom for spacing */
-}
-
-.community-remember-forgot label input {
-  accent-color: #fff;
-  margin-right: 3px;
-}
-
-.community-remember-forgot a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.community-remember-forgot a:hover {
-  text-decoration: underline;
-}
-
-.community-btn {
-  width: 100%;
-  height: 45px;
-  background: #fff;
-  border: none;
-  outline: none;
-  border-radius: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  font-size: 16px;
-  color: #333;
-  font-weight: 600;
-  margin-bottom: 20px; /* Add margin bottom for spacing */
-}
-
-.community-register-link {
-  font-size: 14.5px;
-  text-align: center;
-}
-
-.community-register-link p a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.community-register-link p a:hover {
-  text-decoration: underline;
-}
-.community-body{
-	display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: url(https://images.unsplash.com/photo-1541780234649-a3d8c21e2d8b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8) no-repeat;
-  background-size: cover;
-  background-position: center;
-}
